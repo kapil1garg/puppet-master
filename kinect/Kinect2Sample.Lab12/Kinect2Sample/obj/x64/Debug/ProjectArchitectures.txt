@@ -1,0 +1,1 @@
+C:\Users\Sydney\Documents\GitHub\puppet-master\kinect\Kinect2Sample.Lab12\Kinect2Sample\Kinect2Sample.csproj;x64

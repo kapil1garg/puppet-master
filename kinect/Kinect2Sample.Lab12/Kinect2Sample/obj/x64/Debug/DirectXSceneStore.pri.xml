@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="DirectXSceneStore" version="1.0" primary="true">
+		<Qualifiers/>
+		<ResourceMapSubtree name="Files">
+			<ResourceMapSubtree name="DirectXSceneStore">
+				<NamedResource name="GameUIStyles.xbf" uri="ms-resource://DirectXSceneStore/Files/DirectXSceneStore/GameUIStyles.xbf">
+					<Candidate type="Path">
+						<Value>DirectXSceneStore\GameUIStyles.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="PixelShader.cso" uri="ms-resource://DirectXSceneStore/Files/DirectXSceneStore/PixelShader.cso">
+					<Candidate type="Path">
+						<Value>DirectXSceneStore\PixelShader.cso</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="PixelShaderFlat.cso" uri="ms-resource://DirectXSceneStore/Files/DirectXSceneStore/PixelShaderFlat.cso">
+					<Candidate type="Path">
+						<Value>DirectXSceneStore\PixelShaderFlat.cso</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ScenePanel.xbf" uri="ms-resource://DirectXSceneStore/Files/DirectXSceneStore/ScenePanel.xbf">
+					<Candidate type="Path">
+						<Value>DirectXSceneStore\ScenePanel.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="VertexShader.cso" uri="ms-resource://DirectXSceneStore/Files/DirectXSceneStore/VertexShader.cso">
+					<Candidate type="Path">
+						<Value>DirectXSceneStore\VertexShader.cso</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="VertexShaderFlat.cso" uri="ms-resource://DirectXSceneStore/Files/DirectXSceneStore/VertexShaderFlat.cso">
+					<Candidate type="Path">
+						<Value>DirectXSceneStore\VertexShaderFlat.cso</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="Assets">
+					<NamedResource name="bounce.wav" uri="ms-resource://DirectXSceneStore/Files/DirectXSceneStore/Assets/bounce.wav">
+						<Candidate type="Path">
+							<Value>DirectXSceneStore\Assets\bounce.wav</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="cellceiling.dds" uri="ms-resource://DirectXSceneStore/Files/DirectXSceneStore/Assets/cellceiling.dds">
+						<Candidate type="Path">
+							<Value>DirectXSceneStore\Assets\cellceiling.dds</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="cellfloor.dds" uri="ms-resource://DirectXSceneStore/Files/DirectXSceneStore/Assets/cellfloor.dds">
+						<Candidate type="Path">
+							<Value>DirectXSceneStore\Assets\cellfloor.dds</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="cellwall.dds" uri="ms-resource://DirectXSceneStore/Files/DirectXSceneStore/Assets/cellwall.dds">
+						<Candidate type="Path">
+							<Value>DirectXSceneStore\Assets\cellwall.dds</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="dayceiling.dds" uri="ms-resource://DirectXSceneStore/Files/DirectXSceneStore/Assets/dayceiling.dds">
+						<Candidate type="Path">
+							<Value>DirectXSceneStore\Assets\dayceiling.dds</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="dayfloor.dds" uri="ms-resource://DirectXSceneStore/Files/DirectXSceneStore/Assets/dayfloor.dds">
+						<Candidate type="Path">
+							<Value>DirectXSceneStore\Assets\dayfloor.dds</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="daywall.dds" uri="ms-resource://DirectXSceneStore/Files/DirectXSceneStore/Assets/daywall.dds">
+						<Candidate type="Path">
+							<Value>DirectXSceneStore\Assets\daywall.dds</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="hit.wav" uri="ms-resource://DirectXSceneStore/Files/DirectXSceneStore/Assets/hit.wav">
+						<Candidate type="Path">
+							<Value>DirectXSceneStore\Assets\hit.wav</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="mediumTile-sdk.png" uri="ms-resource://DirectXSceneStore/Files/DirectXSceneStore/Assets/mediumTile-sdk.png">
+						<Candidate type="Path">
+							<Value>DirectXSceneStore\Assets\mediumTile-sdk.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="metal_texture.dds" uri="ms-resource://DirectXSceneStore/Files/DirectXSceneStore/Assets/metal_texture.dds">
+						<Candidate type="Path">
+							<Value>DirectXSceneStore\Assets\metal_texture.dds</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="nightceiling.dds" uri="ms-resource://DirectXSceneStore/Files/DirectXSceneStore/Assets/nightceiling.dds">
+						<Candidate type="Path">
+							<Value>DirectXSceneStore\Assets\nightceiling.dds</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="nightfloor.dds" uri="ms-resource://DirectXSceneStore/Files/DirectXSceneStore/Assets/nightfloor.dds">
+						<Candidate type="Path">
+							<Value>DirectXSceneStore\Assets\nightfloor.dds</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="nightwall.dds" uri="ms-resource://DirectXSceneStore/Files/DirectXSceneStore/Assets/nightwall.dds">
+						<Candidate type="Path">
+							<Value>DirectXSceneStore\Assets\nightwall.dds</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="seafloor.dds" uri="ms-resource://DirectXSceneStore/Files/DirectXSceneStore/Assets/seafloor.dds">
+						<Candidate type="Path">
+							<Value>DirectXSceneStore\Assets\seafloor.dds</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="smallTile-phone-sdk.png" uri="ms-resource://DirectXSceneStore/Files/DirectXSceneStore/Assets/smallTile-phone-sdk.png">
+						<Candidate type="Path">
+							<Value>DirectXSceneStore\Assets\smallTile-phone-sdk.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="smallTile-windows-sdk.png" uri="ms-resource://DirectXSceneStore/Files/DirectXSceneStore/Assets/smallTile-windows-sdk.png">
+						<Candidate type="Path">
+							<Value>DirectXSceneStore\Assets\smallTile-windows-sdk.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="splash-phone-sdk.png" uri="ms-resource://DirectXSceneStore/Files/DirectXSceneStore/Assets/splash-phone-sdk.png">
+						<Candidate type="Path">
+							<Value>DirectXSceneStore\Assets\splash-phone-sdk.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="splash-windows-sdk.png" uri="ms-resource://DirectXSceneStore/Files/DirectXSceneStore/Assets/splash-windows-sdk.png">
+						<Candidate type="Path">
+							<Value>DirectXSceneStore\Assets\splash-windows-sdk.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="squareTile-sdk.png" uri="ms-resource://DirectXSceneStore/Files/DirectXSceneStore/Assets/squareTile-sdk.png">
+						<Candidate type="Path">
+							<Value>DirectXSceneStore\Assets\squareTile-sdk.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="storeLogo-sdk.png" uri="ms-resource://DirectXSceneStore/Files/DirectXSceneStore/Assets/storeLogo-sdk.png">
+						<Candidate type="Path">
+							<Value>DirectXSceneStore\Assets\storeLogo-sdk.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="tile-sdk.png" uri="ms-resource://DirectXSceneStore/Files/DirectXSceneStore/Assets/tile-sdk.png">
+						<Candidate type="Path">
+							<Value>DirectXSceneStore\Assets\tile-sdk.png</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="windows-sdk.png" uri="ms-resource://DirectXSceneStore/Files/DirectXSceneStore/Assets/windows-sdk.png">
+						<Candidate type="Path">
+							<Value>DirectXSceneStore\Assets\windows-sdk.png</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>
