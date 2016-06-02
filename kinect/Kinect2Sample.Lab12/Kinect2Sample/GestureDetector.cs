@@ -28,7 +28,7 @@ namespace Kinect2Sample
         /// <summary> Path to the gesture database that was trained with VGB </summary>
         private readonly string gestureDatabase = @"Database\Seated.gbd";
 
-        
+
 
         //important lab 13
         /// <summary> Name of the discrete gesture in the database that we want to track </summary>
@@ -41,6 +41,9 @@ namespace Kinect2Sample
 
         /// <summary> Gesture frame reader which will handle gesture events coming from the sensor </summary>
         private VisualGestureBuilderFrameReader vgbFrameReader = null;
+
+        /// <summary> TCP Client used to communicate with rPi
+        TcpClient client = new TcpClient();
 
         /// <summary>
         /// Initializes a new instance of the GestureDetector class along with the gesture frame source and reader
@@ -76,7 +79,7 @@ namespace Kinect2Sample
             // load the 'Seated' gesture from the gesture database
             using (VisualGestureBuilderDatabase database = new VisualGestureBuilderDatabase(this.gestureDatabase))
             {
-                // we could load all available gestures in the database with a call to vgbFrameSource.AddGestures(database.AvailableGestures), 
+                // we could load all available gestures in the database with a call to vgbFrameSource.AddGestures(database.AvailableGestures),
                 // but for this program, we only want to track one discrete gesture from the database, so we'll load it by name
                 //foreach (Gesture gesture in database.AvailableGestures)
                 //{
@@ -86,7 +89,7 @@ namespace Kinect2Sample
                 //    }
                 //}
 
-                // we could load all available gestures in the database with a call to vgbFrameSource.AddGestures(database.AvailableGestures), 
+                // we could load all available gestures in the database with a call to vgbFrameSource.AddGestures(database.AvailableGestures),
                 // but for this program, we only want to track one discrete gesture from the database, so we'll load it by name
                 foreach (Gesture gesture in database.AvailableGestures)
                 {
@@ -104,6 +107,10 @@ namespace Kinect2Sample
                     }
                 }
             }
+
+            // setup TCPClient
+            IPEndPoint ep = new IPEndPoint(IPAddress.Parse("169.254.0.2"), int.Parse("51717"));
+            client.Connect(ep);
         }
 
         /// <summary> Gets the GestureResultView object which stores the detector results for display in the UI </summary>
@@ -232,21 +239,24 @@ namespace Kinect2Sample
 
                             if (gesture.Name.Equals(this.bowingGestureName) && gesture.GestureType == GestureType.Discrete)
                             {
-                                
+
                                 DiscreteGestureResult result = null;
                                 discreteResults.TryGetValue(gesture, out result);
-                       
+
                                 if (result != null)
                                 {
                                     // update the GestureResultView object with new gesture result values
                                     this.GestureResultView.UpdateGestureResult(true, result.Detected, result.Confidence);
                                     if (result.Confidence > 0.7)
                                     {
+                                        byte[] messageToSend = Encoding.ASCII.GetBytes("bow");
+                                        client.Send(messageToSend, messageToSend.Length);
+
                                         Debug.WriteLine("bowed");
                                     }
 
                                 }
-                               
+
                             }
                             else if (gesture.Name.Equals(this.raiseGestureName) && gesture.GestureType == GestureType.Discrete)
                             {
@@ -259,6 +269,8 @@ namespace Kinect2Sample
                                     this.GestureResultView.UpdateGestureResult(true, result.Detected, result.Confidence);
                                     if (result.Confidence > 0.7)
                                     {
+                                        byte[] messageToSend = Encoding.ASCII.GetBytes("arm_up");
+                                        client.Send(messageToSend, messageToSend.Length);
                                         Debug.WriteLine("raised hand");
                                     }
                                 }
@@ -274,9 +286,16 @@ namespace Kinect2Sample
                                     this.GestureResultView.UpdateGestureResult(true, result.Detected, result.Confidence);
                                     if (result.Confidence > 0.7)
                                     {
+                                        byte[] messageToSend = Encoding.ASCII.GetBytes("arm_down");
+                                        client.Send(messageToSend, messageToSend.Length);
                                         Debug.WriteLine("lowered hand");
                                     }
                                 }
+                            }
+                            else
+                            {
+                                byte[] messageToSend = Encoding.ASCII.GetBytes("nocommand");
+                                client.Send(messageToSend, messageToSend.Length);
                             }
                         }
                     }

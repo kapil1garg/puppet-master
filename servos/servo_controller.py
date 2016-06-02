@@ -51,16 +51,20 @@ while True:
             print command
 
       # move head
-            if command == 'head':
-                pass
-            elif command == 'arm':
-                pass
-            elif command == 'hip':
-                pass
+            if command == 'arm_up':
+                conn.sendall('arm up received')
+                print 'arm up received'
+            elif command == 'arm_down':
+                conn.sendall('arm down received')
+                print 'arm down received'
+            elif command == 'bow':
+                conn.sendall('bow received')
+                print 'bow received'
             elif command == 'nocommand':
-                pass
+                conn.sendall('no command received')
+                print 'no command received'
             else:
-                conn.sendall(str(-1))
+                conn.sendall('no movement received')
     finally:
         conn.close()
         GPIO.cleanup()
